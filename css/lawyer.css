@@ -1,0 +1,984 @@
+@charset "utf-8";
+/*
+ */
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear::after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+/* -----expense页面---------*/
+
+.expense {
+	width: 14.93rem;
+	padding: 0.5rem;
+	background: white;
+	border-bottom: 1px solid #f5f5f5;
+	box-sizing: content-box;
+}
+.xiao {
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+.text {
+	width: 7.46rem;
+	float: left;
+}
+
+.time {
+	font-size: 0.55rem;
+	color: #666;
+	padding-top: 0.12rem;
+}
+
+.money {
+	font-size: 0.6rem;
+	float: right;
+	height: 0.85rem;
+	line-height: 0.85rem;
+	color: red;
+	padding-top: 0.21rem;
+}
+
+
+/* -----about页面----- */
+
+.header1 {
+	width: 100%;
+	height: 6rem;
+	overflow: hidden
+}
+
+.logo {
+	width: 3.41rem;
+	height: 3.41rem;
+	background: #0ab4e6;
+	border-radius: 50%;
+	margin: 1.28rem auto
+}
+.text1 {
+	margin: 0 0.93rem;
+}
+.text1 span {
+	font-size: 0.6rem;
+	line-height: 1.1rem;
+	letter-spacing: 0.04rem;
+	color: #333333;
+}
+/* -----casedetailed页面------ */
+/*我的案件*/
+.title {
+	border-bottom: 1px solid #e5e5e5;
+	padding: .5rem;
+}
+.toux {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+.word {
+	width: 11.9rem;
+	margin-top: .5rem;
+}
+/* -----mycase页面----- */
+
+.more {
+	width: 0.85rem;
+	height: 1.28rem;
+	background: url("../images/more_right.png") no-repeat 0.43rem 0.23rem;
+	-webkit-background-size: 0.34rem 0.51rem;
+	background-size: 0.34rem 0.51rem;
+}
+
+.progress {
+	width: 14.93rem;
+	margin: 0.53rem;
+	line-height: 0.85rem;
+	letter-spacing: 0.02rem;
+	font-size: 0.6rem;
+	height: 1.70rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+
+/*search*/
+
+.search {
+	width: 100%;
+	position: relative;
+}
+.search input {
+	width: 14rem;
+	padding: 0 0.55rem;
+	height: 1.28rem;
+	font-size: 0.55rem;
+	border-radius: 0.64rem;
+	border: none;
+	outline: none;
+	margin: 0.32rem auto;
+	display: block;
+}
+.search input::-ms-input-placeholder {
+	text-align: center;
+}
+.search input::-webkit-input-placeholder {
+	text-align: center;
+}
+.int-sea{
+	position: absolute;
+	top: .2rem;
+	right: 1.3rem;
+	width: .9rem;
+	height: auto;
+}
+
+/*排序*/
+
+.sort {
+	width: 100%;
+	background: #fff;
+	border-bottom: 0.02rem #f5f5f5 solid;
+}
+
+.xu {
+	width: 7.86rem;
+	/* border:solid 0.05rem red; */
+	height: 1.71rem;
+	line-height: 1.71rem;
+	text-align: center;
+	color: #333;
+	font-size: 0.6rem;
+	position: relative;
+	font-weight: bold;
+}
+
+.pai {
+	width: 0.3rem;
+	height: 0.21rem;
+	/* border: 1px solid red; */
+	position: absolute;
+	top: 0.7rem;
+	right: 2rem;
+}
+
+.pai1 {
+	width: 0.26rem;
+	height: 0.47rem;
+	display: inline
+}
+
+.casetype div {
+	background: url("../images/down1.png") no-repeat;
+	background-size: 0.3rem 0.21rem
+}
+
+.line1 {
+	width: 0;
+	height: 0.85rem;
+	border: solid 0.02rem #f5f5f5;
+	margin-top: 0.43rem
+}
+
+
+/* 律师列表 */
+
+.all {
+	margin-bottom: 0.58rem
+}
+
+.listbody {
+	width: 100%;
+	padding: 0.53rem;
+	background: #fff;
+	padding-bottom: 0;
+}
+
+.photo {
+	width: 2.13rem;
+	height: 2.13rem;
+	/* border: solid 1px red; */
+	border-radius: 50%;
+	border: solid 1px #999;
+}
+
+.info {
+	margin-left: 0.53rem;
+}
+
+.info>div {
+	width: 12rem
+}
+
+.info div {
+	height: 1.07rem;
+	line-height: 1.07rem;
+	text-align: center;
+}
+
+.lawyername {
+	color: #333;
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+
+.tie {
+	width: 0.3rem;
+	background: url(../images/tie.png) no-repeat 0 0.1rem;
+	/* border:solid 1px red; */
+	margin: 0 0.1rem 0 0.43rem;
+	background-size: 0.34rem
+}
+
+.years {
+	font-size: 0.6rem;
+	color: #666
+}
+
+.charge {
+	font-size: 0.6rem;
+	color: #ff2323
+}
+
+.dispute li {
+	font-size: 0.6rem;
+	color: #666;
+	margin-right: 0.34rem;
+	margin-top: 0.34rem
+}
+
+.striping {
+	width: 100%;
+	border-bottom: solid 1px #f5f5f5;
+	background: white;
+	height: 0.43rem
+}
+
+.relation {
+	width: 100%;
+	height: 1.71rem;
+	/* border: solid 1px red; */
+	background: white;
+}
+
+.lianxi {
+	width: 7.96rem;
+	height: 1.71rem;
+}
+
+.zhong {
+	width: 3.31rem;
+	margin: 0 auto;
+	height: 1.71rem;
+	/* border: solid 1px red; */
+	text-align: right;
+	line-height: 1.71rem;
+	font-size: 0.6rem;
+	color: #009ccc;
+}
+
+.time1 {
+	background: url(../images/time1.png) no-repeat 0 0.43rem;
+	background-size: 0.75rem 0.75rem;
+}
+
+.phone1 {
+	background: url(../images/phone1.png) no-repeat 0 0.43rem;
+	background-size: 0.75rem 0.75rem;
+}
+.shade{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+	z-index: 4;
+	display: none;
+}
+.tanc{
+	position: fixed;
+	top: 50%;
+	left: 2rem;
+	width: 12rem;
+	height: 4.6rem;
+	background-color: #fff;
+	z-index: 5;
+	margin-top: -2.3rem;
+	border-radius: .5rem;
+	display: none;
+}
+.oprate{
+	border-top: 1px solid #e5e5e5;
+	margin-top: .4rem;
+}
+.qux,.qued{
+	width: 50%;
+	height: 1.5rem;
+	background-color: #fff;
+}
+.qued{
+	border-bottom-right-radius: .5rem;
+	text-align: center;
+	line-height: 1.5rem;
+	font-weight: bold;
+}
+.qux{
+	border-bottom-left-radius: .5rem;
+	border-right: 1px solid #e5e5e5;
+}
+/* footer */
+
+footer {
+	width: 100%;
+	height: 2.13rem;
+	position: fixed;
+	bottom: 0;
+	background: white;
+}
+
+footer>div {
+	width: 7.98rem;
+	height: 2.13rem;
+	/* border: solid 1px red */
+}
+
+.index,
+.home {
+	width: 49%
+}
+
+.index_img,
+.home_img,
+.home_img1,
+.index_img1 {
+	height: 1.15rem;
+}
+
+.text {
+	height: 0.53rem;
+	text-align: center;
+	font-size: 0.51rem;
+}
+
+.index_img {
+	background: url(../images/index.png) no-repeat 3.35rem 0.17rem;
+	background-size: 0.85rem
+}
+
+.home_img {
+	background: url(../images/me.png) no-repeat 3.35rem 0.17rem;
+	background-size: 0.85rem
+}
+
+.home_img1 {
+	background: url(../images/me1.png) no-repeat 3.35rem 0.17rem;
+	background-size: 0.85rem
+}
+
+.index_img1 {
+	background: url(../images/index1.png) no-repeat 3.35rem 0.17rem;
+	background-size: 0.85rem
+}
+
+.color_no {
+	color: #999;
+}
+
+.color {
+	color: #0ab4e6;
+}
+
+
+/* 遮罩层及选择 */
+
+.shadow {
+	width: 16.0rem;
+	height: 80%;
+	background: #000;
+	z-index: 3;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	opacity: .3;
+	display: none;
+}
+
+
+/* 法律类型选择 */
+
+.sousou {
+	position: relative;
+}
+.lawtype {
+	padding: 0 0.53rem;
+	z-index: 4;
+	position: absolute;
+	width: 100%;
+	background: white;
+	display: none;
+}
+
+.jiufen {
+	height: 1.81rem;
+	font-size: 0.64rem;
+	color: #333;
+	line-height: 1.81rem;
+	border-bottom: solid 0.02rem #f5f5f5;
+	display: block;
+}
+
+.showq {
+	height: 0.85rem;
+	background: url(../images/shouq.png) no-repeat 7rem 0.25rem;
+	background-size: 0.56rem 0.28rem
+}
+/*mine页面*/
+
+.mine_header {
+	width: 100%;
+	height: 6.08rem;
+	background: url(../images/mine-bk.png) no-repeat;
+	background-size: 16.0rem 6.08rem;
+	overflow: hidden;
+}
+
+.mine-ph {
+	height: 3.5rem;
+	width: 3.5rem;
+	border-radius: 50%;
+	border: solid 0.06rem white;
+	margin: 0.85rem 6.25rem 0;
+}
+
+.my-name {
+	font-size: 0.7rem;
+	text-align: center;
+	color: white;
+	margin-top: .3rem
+}
+
+
+/* 我的列表 */
+
+.melist {
+	height: 2.09rem;
+	line-height: 2.09rem;
+	padding: 0 1.88rem;
+	font-size: .7rem;
+	display: block;
+	color: #333;
+	border-bottom: solid 1px #f5f5f5;
+	padding-right: 0
+}
+
+.consults {
+	background: white url(../images/consult.png) no-repeat 0.5rem 0.65rem;
+	background-size: 0.96rem;
+	margin-top: 0.21rem
+}
+
+.me-case {
+	background: white url(../images/my-case.png) no-repeat 0.5rem 0.65rem;
+	background-size: 0.96rem
+}
+
+.me-xiaofei {
+	background: white url(../images/detail.png) no-repeat 0.5rem 0.65rem;
+	background-size: 0.9rem
+}
+
+.me-about {
+	background: white url(../images/aboutus.png) no-repeat 0.5rem 0.65rem;
+	background-size: 0.96rem;
+	margin-top: 0.53rem
+}
+
+.moree {
+	background: url(../images/more_right.png) no-repeat 0 0.64rem;
+	height: 2.09rem;
+	width: 0.8rem;
+	background-size: 0.43rem 0.64rem
+}
+
+
+/*------ lawyerhistory页面------ */
+
+
+/* header */
+
+.lawyerxiang {
+	height: 7.77rem;
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+}
+
+.fangshi {
+	width: 100%;
+}
+
+.fangshi>div {
+	margin: 0 auto;
+}
+
+.nametime {
+	width: 8.96rem;
+	height: 1.17rem;
+}
+
+.namem {
+	width: 4.48rem;
+	height: 1.17rem;
+	text-align: right;
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+
+.nametime img {
+	height: 0.9rem;
+	width: 0.35rem;
+	margin: 0.08rem 0.11rem 0.08rem 0.3rem;
+	color: #666;
+}
+
+.timem {
+	font-size: 0.65rem;
+	text-align: left;
+	height: 1.17rem;
+	line-height: 1.17rem;
+}
+
+.lei {
+	height: 1.17rem;
+	line-height: 1.17rem;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+}
+
+.phonen {
+	width: 100%;
+	height: 1.17rem;
+}
+
+.phonen>img {
+	margin-left: 4.95rem;
+	width: 0.85rem;
+	height: 0.85rem;
+}
+
+
+/* 咨询费用 */
+
+.feiyong span {
+	height: 2.07rem;
+	line-height: 2.07rem;
+	font-size: 0.64rem;
+}
+
+.price {
+	font-weight: bold;
+	color: red;
+}
+
+
+/* 个人简介 */
+
+.individual {
+	background: white;
+	padding: 0.53rem;
+	border-bottom: 0.04rem solid #f5f5f5;
+}
+
+.indiv {
+	height: 1.07rem;
+	color: #666;
+}
+
+.individual:nth-of-type(2) {
+	color: #333;
+	font-size: 0.6rem;
+	letter-spacing: 0.04rem
+}
+
+
+/* 成功案例 */
+
+.chenggong {
+	background: white;
+	padding: 0.53rem;
+	border-bottom: 0.04rem solid #f5f5f5;
+}
+
+.chenggong ul li {
+	display: block;
+	height: 1.02rem;
+	color: #333;
+	font-size: 0.6rem;
+}
+
+
+/* footer */
+
+.onlineyue {
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-left: 2rem;
+	margin-top: 0.65rem
+}
+
+.onlineyue1 {
+	height: 2.13rem;
+	line-height: 2.13rem;
+	font-size: 0.6rem;
+	color: #009ccc;
+	margin-left: 0.5rem
+}
+
+.line2 {
+	height: 1.49rem;
+	border: 0.01rem solid #f5f5f5;
+	width: 0;
+	margin-top: 0.32rem
+}
+
+
+/* ----------------advice页面--------------- */
+
+
+/* header */
+
+.choo {
+	width: 100%;
+	height: 1.9rem;
+	background: white;
+}
+
+.order {
+	width: 33.3%;
+}
+
+.wait {
+	height: 1.75rem;
+	line-height: 1.75rem;
+	text-align: center;
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+
+.underline {
+	width: 0.9rem;
+	height: 0.09rem;
+	margin-left: 2.24rem
+}
+
+.cl {
+	color: #0ab4e6;
+}
+
+.bk {
+	background: #0ab4e6;
+}
+
+
+/* 付款信息 */
+.photo{
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+.fuk{
+	line-height: 1rem;
+}
+.confirm,.cancel{
+	width: 3rem;
+	margin-top: .5rem;
+	height: 1.3rem;
+	border-radius: .3rem;
+}
+.cancel{
+	background-color: #fff;
+	color: #999;
+	border: 1px solid #999;
+}
+.confirm{
+	background-color: #0AB4E6;
+	color: #fff;
+}
+/* 头部 */
+
+.non_header {
+	background: white;
+	height: 3.2rem;
+	padding: 0.53rem;
+	border-bottom: solid 1px #f5f5f5;
+}
+
+.non_header div {
+	width: 12rem;
+}
+
+.non_name {
+	height: 1.92rem;
+	line-height: 1.92rem;
+	font-size: 0.6rem;
+	color: #333;
+	font-weight: bold;
+}
+
+.non_money {
+	height: 1.92rem;
+	line-height: 1.92rem;
+	font-size: 0.6rem;
+	color: red;
+	font-weight: bold;
+}
+
+
+/* 中间 */
+
+.non_content {}
+
+.non_content p {
+	padding: 0.64rem;
+	border-bottom: solid 1px #f5f5f5;
+	background: white;
+}
+
+.non_zi {
+	color: #333;
+	margin-right: 0.53rem
+}
+
+.non_nei {
+	display: block;
+	width: 100%;
+	line-height: 0.9rem;
+	letter-spacing: 0.04rem
+}
+
+.non_time {
+	margin-right: 0.43rem
+}
+
+.non_pay {
+	font-weight: bold;
+	text-align: right;
+	margin-top: 0.53rem
+}
+
+.non_pay span {
+	color: red
+}
+
+
+/* footer */
+
+.non_footer {
+	background: white;
+	height: 2.56rem;
+	width: 100%;
+}
+
+.non_footer div {
+	width: 6.83rem;
+	height: 1.92rem;
+	line-height: 1.92rem;
+	border-radius: 0.21rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.6rem;
+	margin-top: 0.32rem
+}
+
+.non_cancel_pay {
+	border: solid 0.02rem #999;
+	margin-left: 0.53rem
+}
+
+.non_confirm_pay {
+	margin-left: 1.39rem;
+	color: white;
+	background: #0ab4e6;
+}
+
+
+/* ---------------------canceled页面------------------- */
+
+.can_footer {
+	text-align: right;
+	line-height: 2.56rem;
+	font-weight: bold;
+	color: #333;
+	padding-right: 0.64rem
+}
+
+
+/* -------------------在线预约页面-------------------- */
+
+
+/* 头 */
+
+.ap_header {
+	background: white;
+	width: 100%;
+	padding: 0 0.53rem;
+}
+
+.ap_header_all {
+	border-bottom: solid 1px #f5f5f5;
+}
+
+.ap_consultant {
+	height: 2.09rem;
+	font-size: 0.6rem;
+	color: #333;
+	line-height: 2.09rem;
+}
+
+.ap_name,
+.ap_phone,
+.ap_chootime {
+	height: 2.09rem;
+	outline: none;
+	padding-left: 0.68rem;
+}
+
+.ap_name {
+	width: 12rem
+}
+
+.ap_phone {
+	width: 10.67rem
+}
+
+.ap_textarea {
+	height: 2.56rem;
+	width: 14.93rem;
+}
+
+.ap_chootime {
+	line-height: 2.09rem;
+	color: #999;
+	padding-right: 0.9rem;
+	background: url(../images/more_down.png) no-repeat 4.2rem 0.8rem;
+	background-size: 0.58rem 0.4rem
+}
+.ap_bk{
+	background: #0ab4e6;
+	width: 100%;
+}
+.ap_left ,.ap_right{
+	width:2rem ;
+	height: 2rem;
+}
+.ap_left{
+	border-right: 1px solid #16a4cf ;
+}
+.ap_right{
+	border-left: 1px solid #16a4cf;
+}
+
+.ap_bk img{
+	width: 0.5rem;
+	height: 0.9rem;
+	margin: 0.5rem 0.8rem;
+}
+.ap_bk p{
+	width: 10rem;
+	line-height: 2rem;
+}
+.ap_week{
+	height: 2rem;
+	background:#39c1e9;
+}
+.ap_week ul li{
+	width: 2.1rem;
+	float: left;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #ffffff;
+	}
+.ap_date{
+	height: 2rem;
+}
+.ap_date:nth-of-type(even){
+	background: #e9f2f4;}
+.ap_date li{
+	float: left;
+	width: 2.11rem;
+	text-align: center;
+	font-size: 0.5rem;
+}
+.ap_date ul li p:nth-of-type(1){
+	margin-top: 0.4rem;
+}
+.ap_date ul li p:nth-of-type(2){
+	border-radius: 0.5rem;
+	background: orange;
+	color: #ffffff;
+	width: 1.6rem;
+	margin: 0 auto;
+}
+
+
+/* 地址 */
+.ap_address {
+	width: 100%;
+	padding: 0.53rem;
+	background: white;
+	margin-top: 0.79rem;
+}
+
+.ap_money {
+	color: red;
+	height: 2.09rem;
+	line-height: 2.09rem;
+}
+
+.ap_dian p{
+	height: 1rem;
+	line-height: 1rem
+}
+.ap_dian img{
+	width: 0.7rem;
+	height: 0.4rem;
+    margin-top:0.2rem }
+
+.ap_time li{
+	float: left;
+	width: 7rem;
+	height: 1.5rem;
+	margin: 0.5rem 0.5rem 0;
+    border-radius: 0.7rem;
+	background: #16a4cf;
+	color: #ffffff;
+	line-height: 1.5rem;
+	text-align: center；
+}
+
+
+/* footer */
+
+.ap_footer {
+	text-align: center;
+	height: 2.09rem;
+	line-height: 2.09rem;
+	color: white;
+	background: #0ab4e6;
+	font-size: 0.68rem
+}
