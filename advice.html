@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的咨询</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/moblie.css">
+		<link rel="stylesheet" href="css/lawyer.css">
+		<style>
+			.nodata {
+				text-align: center;
+				line-height: 3rem;
+				color: #999;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="choo">
+			<div class="order left" onClick="advice('Didnotpay')">
+				<div class="wait cl">待付款</div>
+				<div class="underline bk"></div>
+			</div>
+			<div class="order left" onClick="advice('Havetopay')">
+				<div class="wait">已付款</div>
+				<div class="underline "></div>
+			</div>
+			<div class="order left" onClick="advice('cancel')">
+				<div class="wait">已取消</div>
+				<div class="underline "></div>
+			</div>
+		</nav>
+		<!-- 付款信息 -->
+		<!-- 待付款 -->
+		<div class="info_wait">
+			<div class="char_info bac-fff mt-3 p-5">
+				<div class="clearfix">
+					<a class="c33" href="">
+						<div class="fl zuo">
+							<img src="images/下载.png" alt="" class="photo">
+							<p class="text-c">王小二</p>
+						</div>
+						<div class="fr fuk text-r">
+							<p class="">2018-08-08</p>
+							<p class="">待付款：<span class="cf63">￥300</span></p>
+							<p class=""><span>狗剩</span><span>132 602 19873</span></p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix oprate">
+					<button class="fr confirm">支付</button>
+					<button class="fr cancel mr-5">取消</button>
+				</div>
+			</div>
+		</div>
+		<!-- 已付款 -->
+		<div class="info_wait dis-n">
+			<div class="char_info bac-fff mt-3 p-5">
+				<div class="clearfix">
+					<a class="c33" href="">
+						<div class="fl zuo">
+							<img src="images/下载.png" alt="" class="photo">
+							<p class="text-c">王小二</p>
+						</div>
+						<div class="fr fuk text-r">
+							<p class="">2018-08-08</p>
+							<p class="">已付款：<span class="cf63">￥300</span></p>
+							<p class=""><span>狗剩</span><span>132 602 19873</span></p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 已取消 -->
+		<div class="info_wait dis-n">
+			<div class="char_info bac-fff mt-3 p-5">
+				<div class="clearfix">
+					<a class="c33" href="">
+						<div class="fl zuo">
+							<img src="images/下载.png" alt="" class="photo">
+							<p class="text-c">王小二</p>
+						</div>
+						<div class="fr fuk text-r">
+							<p class="">2018-08-08</p>
+							<p class="">已取消</p>
+							<p class=""><span>狗剩</span><span>132 602 19873</span></p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<p class="showmore dis-n">没有更多数据了</p>
+		<p class="nodata dis-n">暂无数据</p>
+	</body>
+	<script src="js/adaption.js"></script>
+	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="js/lawyer.js"></script>
+	<script src="jscript/advice.js"></script>
+
+</html>
